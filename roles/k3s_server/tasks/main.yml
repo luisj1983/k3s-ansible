@@ -140,7 +140,7 @@
       ansible.builtin.copy:
         src: /etc/rancher/k3s/k3s.yaml
         dest: /etc/rancher/k3s/k3s-copy.yaml
-        mode: "0600"
+        mode: "0644"
         remote_src: true
       register: copy_k3s_yaml_file
 
